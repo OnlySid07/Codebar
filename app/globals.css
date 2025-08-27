@@ -4,6 +4,21 @@
   --background: #ffffff;
   --foreground: #171717;
 }
+@media print {
+  body * {
+    visibility: hidden; /* oculta todo */
+  }
+  #print-area, #print-area * {
+    visibility: visible; /* solo muestra el área de códigos */
+  }
+  #print-area {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+  }
+}
+
 
 @theme inline {
   --color-background: var(--background);
