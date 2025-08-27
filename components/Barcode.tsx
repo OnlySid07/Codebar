@@ -24,7 +24,7 @@ export default function Barcode({
 
   useEffect(() => {
     if (svgRef.current) {
-      const barWidth = value.length > 15 ? 1 : width
+      const barWidth = value.length > 20 ? 1 : value.length > 10 ? 2 : width
       const barHeight = showText ? maxHeight - 20 : maxHeight // deja espacio para texto
 
       JsBarcode(svgRef.current, value, {
