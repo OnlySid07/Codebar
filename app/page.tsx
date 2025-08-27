@@ -146,10 +146,12 @@ export default function Page() {
           <div
             key={i}
             onClick={() => setSelectedCode(code)}
-            className="flex flex-col items-center justify-center p-2 bg-white
-             w-[200px] h-[120px] print:w-full print:h-auto print:p-6"
+            className="cursor-pointer hover:scale-105 transition flex flex-col items-center justify-center 
+             p-2 bg-white 
+             w-[200px] h-[120px] 
+             print:w-[400px] print:h-[200px] print:p-4"
           >
-            <Barcode value={code} prefix={prefix} showText={showText} maxHeight={120} />
+            <Barcode value={code} prefix={prefix} showText={showText} maxHeight={200} />
           </div>
         ))}
 
