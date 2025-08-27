@@ -34,7 +34,7 @@ export default function Barcode({
         displayValue: showText,
         text: prefix ? `${prefix}-${value}` : value,
         fontSize: 12, // texto más compacto
-        margin: 0,    // 👈 quita espacio extra alrededor
+        margin: 0,    //  quita espacio extra alrededor
       })
 
       svgRef.current.setAttribute("width", "100%")

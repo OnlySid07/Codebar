@@ -23,6 +23,7 @@ const [selectedCode, setSelectedCode] = useState<string | null>(null)
 
     setCodes([...codes, ...prefixed])
     setInput("")
+    setPrefix("")
   }
 
   const handlePrint = () => {
@@ -33,14 +34,14 @@ const [selectedCode, setSelectedCode] = useState<string | null>(null)
 
   return (
     <div className="p-8 flex flex-col items-center">
-      <h1 className="text-2xl font-bold mb-6">Generador de Códigos de Barras</h1>
+      <h1 className="text-2xl font-bold p-5 ">Generador de Códigos de Barras - PROMART SJL</h1>
 
       <form
         onSubmit={(e) => {
           e.preventDefault()
           addCode()
         }}
-        className="flex flex-col gap-3 mb-6 items-center"
+        className="flex flex-col gap-3 mb-6 items-center p-5"
       >
         {/* Prefijo opcional */}
         <input
