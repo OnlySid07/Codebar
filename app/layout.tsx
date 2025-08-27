@@ -22,6 +22,9 @@ const geistMono = Geist_Mono({
 export const metadata: Metadata = {
   title: "Generador de Códigos de Barras - PROMART SJL",
   description: "JOS Cam",
+  icons: {
+    icon: "/Naranjito.ico",
+  },
 };
 
 export default function RootLayout({
