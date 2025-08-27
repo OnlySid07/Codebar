@@ -32,7 +32,7 @@ export default function Barcode({
         width: barWidth,
         height: barHeight,
         displayValue: showText,
-        text: prefix ? `${prefix}-${value}` : value,
+        text: prefix ? `${prefix}${value}` : value,
         fontSize: 12, // texto más compacto
         margin: 0,    //  quita espacio extra alrededor
       })
